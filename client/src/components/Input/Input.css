@@ -1,0 +1,32 @@
+input {
+  border: 1px solid #888;
+  border-radius: 0.5rem;
+  padding: 1rem 0.6rem;
+  margin: 0.5rem 0 0;
+}
+
+.full {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+}
+
+label {
+  position: absolute;
+  top: 1.5rem;
+  left: 0.6rem;
+  font-family: Inter;
+  color: #888;
+  transition: 0.2s;
+  pointer-events: none;
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  top: 0;
+  background-color: #fff;
+  padding: 0 0.25rem;
+  font-size: 0.75rem;
+}

@@ -1,7 +1,7 @@
-import "./App.css";
+import { Register } from "./pages";
 
 function App() {
-  return <h1>ChatterBox App</h1>;
+  return <Register />;
 }
 
 export default App;
