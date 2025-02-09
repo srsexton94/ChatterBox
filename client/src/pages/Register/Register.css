@@ -28,10 +28,12 @@ img {
 }
 
 button {
-  margin: 2rem 0;
+  margin: 1rem 0;
+  width: 20rem;
   padding: 1rem 2rem;
   font-size: 1rem;
   border-radius: 0.75rem;
   color: white;
   background-color: #023e8a;
+  cursor: pointer;
 }

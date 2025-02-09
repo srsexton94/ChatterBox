@@ -2,7 +2,7 @@ import { useId } from "react";
 import "./Input.css";
 import { InputProps, InputTypes } from "../../models";
 
-function Input({ label, type = InputTypes.TEXT, isFull = false }: InputProps) {
+function Input({ label, value, type = InputTypes.TEXT, isFull = false, onChange }: InputProps) {
   const inputId = useId();
 
   return (
@@ -12,6 +12,8 @@ function Input({ label, type = InputTypes.TEXT, isFull = false }: InputProps) {
         className={isFull ? "full" : ""}
         placeholder=" "
         type={type}
+        value={value}
+        onChange={onChange}
       />
       <label htmlFor={inputId}>{label}</label>
     </div>
