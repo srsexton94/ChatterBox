@@ -13,7 +13,13 @@ section {
   margin: 4rem auto;
 }
 
-section input {
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
   width: 20rem;
 }
 
